@@ -1,0 +1,13 @@
+As we all know that Java support UUID and PostgreSQL support UUID but where in case JDBC does not support UUID type 
+so whenever you tried to update the DB with UUID type from java then we need to convert to string and persist in the database
+and whenever you want to reterieve it then you need to TYPECAST it while get the value some time it leads to a series problem
+that we get runtimeexception for type casting which leads your application to exit or misbehave....
+
+To avaoid i have written Type Handler.
+
+This handler can be used in the below envirment
+
+Java 1.5 +
+JDBC native_driver
+PostgreSQL 9 +
+   
